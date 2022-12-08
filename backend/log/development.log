@@ -17711,3 +17711,1265 @@ Processing by TeamsController#index as */*
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1870)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041UDWPBAB-738a84e6e25f-72"], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 96], ["created_at", "2022-12-08 20:06:47.845046"], ["updated_at", "2022-12-08 20:06:47.845046"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042D525X9P-d7bba01b6a15-72"], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-08 20:06:47.847075"], ["updated_at", "2022-12-08 20:06:47.847075"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041D1WMSF7-149f722d3fa0-72"], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-08 20:06:47.848328"], ["updated_at", "2022-12-08 20:06:47.848328"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042DH4D9UH-9e92754d578d-72"], ["position", "Defender"], ["age", 25], ["country", "Portugal"], ["goals", 10], ["created_at", "2022-12-08 20:06:47.849397"], ["updated_at", "2022-12-08 20:06:47.849397"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03S7QG8J5A-cf35624449d2-72"], ["position", "Attacker"], ["age", 23], ["country", "Argentina"], ["goals", 32], ["created_at", "2022-12-08 20:06:47.850403"], ["updated_at", "2022-12-08 20:06:47.850403"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U02TJ9YUWKG-a15d9e713018-72"], ["position", "Midfield"], ["age", 27], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-08 20:06:47.851579"], ["updated_at", "2022-12-08 20:06:47.851579"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0315JTRGLA-4499922d4b19-72"], ["position", "Defender"], ["age", 26], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-08 20:06:47.852841"], ["updated_at", "2022-12-08 20:06:47.852841"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042AK20JHF-4054289dfb6f-72"], ["position", "Attacker"], ["age", 28], ["country", "Venezuela"], ["goals", 44], ["created_at", "2022-12-08 20:06:47.853903"], ["updated_at", "2022-12-08 20:06:47.853903"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042LLGPDG8-b008c0402b81-72"], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-08 20:06:47.854952"], ["updated_at", "2022-12-08 20:06:47.854952"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042D4BE21Y-f3202424bbdc-72"], ["position", "Defender"], ["age", 31], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-08 20:06:47.855958"], ["updated_at", "2022-12-08 20:06:47.855958"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042LAZDZ41-96b77456ed74-72"], ["position", "Attacker"], ["age", 19], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-08 20:06:47.856939"], ["updated_at", "2022-12-08 20:06:47.856939"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U04255AD45A-gfec23b3637f-72"], ["position", "BALLBOY"], ["age", 23], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-08 20:06:47.857930"], ["updated_at", "2022-12-08 20:06:47.857930"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041H98GB27-020f7a151554-72"], ["position", "Defender"], ["age", 25], ["country", "Morocco"], ["goals", 9], ["created_at", "2022-12-08 20:06:47.858909"], ["updated_at", "2022-12-08 20:06:47.858909"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0422JGBW9H-8ed761596b8c-72"], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-08 20:06:47.859914"], ["updated_at", "2022-12-08 20:06:47.859914"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041QB2J5UL-70927807a71f-72"], ["position", "Midfield"], ["age", 31], ["country", "South Korea"], ["goals", 81], ["created_at", "2022-12-08 20:06:47.861028"], ["updated_at", "2022-12-08 20:06:47.861028"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03UW7BFY92-86cac1e6b445-72"], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-08 20:06:47.862099"], ["updated_at", "2022-12-08 20:06:47.862099"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03UMT955UH-7355ec40cc92-72"], ["position", "CHEERLEADER"], ["age", 28], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-08 20:06:47.863108"], ["updated_at", "2022-12-08 20:06:47.863108"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041U3ZLJJZ-b10f26c34f04-72"], ["position", "THERAPIST"], ["age", 19], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-08 20:06:47.864146"], ["updated_at", "2022-12-08 20:06:47.864146"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041U61UCGJ-1be655e63ffe-72"], ["position", "Defender"], ["age", 21], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-08 20:06:47.865166"], ["updated_at", "2022-12-08 20:06:47.865166"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U02UA2JMEJK-6f31e44fb6f5-72"], ["position", "Attacker"], ["age", 27], ["country", "India"], ["goals", 63], ["created_at", "2022-12-08 20:06:47.866175"], ["updated_at", "2022-12-08 20:06:47.866175"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U04665KDFEG-552b907c64d5-72"], ["position", "Midfield"], ["age", 20], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-08 20:06:47.867178"], ["updated_at", "2022-12-08 20:06:47.867178"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047U2L4S3Y-aecb76021369-72"], ["position", "Defender"], ["age", 21], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-08 20:06:47.868199"], ["updated_at", "2022-12-08 20:06:47.868199"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047WBXJUR1-bd685fded07b-72"], ["position", "Attacker"], ["age", 22], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-08 20:06:47.869176"], ["updated_at", "2022-12-08 20:06:47.869176"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0402A9B1HT-7af168a719fd-72"], ["position", "Midfield"], ["age", 21], ["country", "China"], ["goals", 42], ["created_at", "2022-12-08 20:06:47.870159"], ["updated_at", "2022-12-08 20:06:47.870159"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047XTNEDT7-f8fff48a5790-72"], ["position", "COMMENTATOR"], ["age", 25], ["country", "Poland"], ["goals", 0], ["created_at", "2022-12-08 20:06:47.871228"], ["updated_at", "2022-12-08 20:06:47.871228"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 7], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 13:08:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Mazin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Mazin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010baebdf0>, params: {"username"=>"Mazin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Mazin"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazin"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mazin"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-08 20:08:06.603131"], ["updated_at", "2022-12-08 20:08:06.603131"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "Mazin"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.13ms)
+Completed 201 Created in 261ms (Views: 1.1ms | ActiveRecord: 1.2ms | Allocations: 41022)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:08:08 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.58ms)
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 1.0ms | Allocations: 29089)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:08:31 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.01ms)
+Completed 200 OK in 75ms (Views: 57.9ms | ActiveRecord: 2.9ms | Allocations: 61633)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:08:32 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.32ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1950)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:08:35 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.76ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 1.9ms | Allocations: 18146)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:08:36 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.49ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:09:08 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.87ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 1.7ms | Allocations: 18123)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:10:08 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.31ms)
+Completed 200 OK in 18ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 1870)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:11:07 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.03ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 8042)
+
+
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTeams (20221205182712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "mascot" varchar, "standing" integer, "top_scorer" varchar, "team_captin" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205182712"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePlayers (20221205183042)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "position" varchar, "age" integer, "country" varchar, "goals" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183042"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDivisions (20221205183243)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "logo" varchar, "mp" varchar, "won" integer, "draw" integer, "lost" integer, "last5" varchar, "points" integer, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+, CONSTRAINT "fk_rails_ad80bce56b"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183243"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20221206190102)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221206190102"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-08 20:24:49.221247"], ["updated_at", "2022-12-08 20:24:49.221247"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041UDWPBAB-738a84e6e25f-72"], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 96], ["created_at", "2022-12-08 20:25:41.494878"], ["updated_at", "2022-12-08 20:25:41.494878"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042D525X9P-d7bba01b6a15-72"], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-08 20:25:41.497002"], ["updated_at", "2022-12-08 20:25:41.497002"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041D1WMSF7-149f722d3fa0-72"], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-08 20:25:41.498487"], ["updated_at", "2022-12-08 20:25:41.498487"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042DH4D9UH-9e92754d578d-72"], ["position", "Defender"], ["age", 25], ["country", "Portugal"], ["goals", 10], ["created_at", "2022-12-08 20:25:41.499650"], ["updated_at", "2022-12-08 20:25:41.499650"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03S7QG8J5A-cf35624449d2-72"], ["position", "Attacker"], ["age", 23], ["country", "Argentina"], ["goals", 32], ["created_at", "2022-12-08 20:25:41.500759"], ["updated_at", "2022-12-08 20:25:41.500759"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U02TJ9YUWKG-a15d9e713018-72"], ["position", "Midfield"], ["age", 27], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-08 20:25:41.501850"], ["updated_at", "2022-12-08 20:25:41.501850"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0315JTRGLA-4499922d4b19-72"], ["position", "Defender"], ["age", 26], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-08 20:25:41.502909"], ["updated_at", "2022-12-08 20:25:41.502909"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042AK20JHF-4054289dfb6f-72"], ["position", "Attacker"], ["age", 28], ["country", "Venezuela"], ["goals", 44], ["created_at", "2022-12-08 20:25:41.504160"], ["updated_at", "2022-12-08 20:25:41.504160"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042LLGPDG8-b008c0402b81-72"], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-08 20:25:41.506967"], ["updated_at", "2022-12-08 20:25:41.506967"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.9ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042D4BE21Y-f3202424bbdc-72"], ["position", "Defender"], ["age", 31], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-08 20:25:41.510997"], ["updated_at", "2022-12-08 20:25:41.510997"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U042LAZDZ41-96b77456ed74-72"], ["position", "Attacker"], ["age", 19], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-08 20:25:41.517814"], ["updated_at", "2022-12-08 20:25:41.517814"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U04255AD45A-gfec23b3637f-72"], ["position", "BALLBOY"], ["age", 23], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-08 20:25:41.519503"], ["updated_at", "2022-12-08 20:25:41.519503"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041H98GB27-020f7a151554-72"], ["position", "Defender"], ["age", 25], ["country", "Morocco"], ["goals", 9], ["created_at", "2022-12-08 20:25:41.520818"], ["updated_at", "2022-12-08 20:25:41.520818"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0422JGBW9H-8ed761596b8c-72"], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-08 20:25:41.522071"], ["updated_at", "2022-12-08 20:25:41.522071"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041QB2J5UL-70927807a71f-72"], ["position", "Midfield"], ["age", 31], ["country", "South Korea"], ["goals", 81], ["created_at", "2022-12-08 20:25:41.523285"], ["updated_at", "2022-12-08 20:25:41.523285"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03UW7BFY92-86cac1e6b445-72"], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-08 20:25:41.524412"], ["updated_at", "2022-12-08 20:25:41.524412"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U03UMT955UH-7355ec40cc92-72"], ["position", "CHEERLEADER"], ["age", 28], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-08 20:25:41.525518"], ["updated_at", "2022-12-08 20:25:41.525518"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041U3ZLJJZ-b10f26c34f04-72"], ["position", "THERAPIST"], ["age", 19], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-08 20:25:41.526675"], ["updated_at", "2022-12-08 20:25:41.526675"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U041U61UCGJ-1be655e63ffe-72"], ["position", "Defender"], ["age", 21], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-08 20:25:41.527810"], ["updated_at", "2022-12-08 20:25:41.527810"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U02UA2JMEJK-6f31e44fb6f5-72"], ["position", "Attacker"], ["age", 27], ["country", "India"], ["goals", 63], ["created_at", "2022-12-08 20:25:41.528939"], ["updated_at", "2022-12-08 20:25:41.528939"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U04665KDFEG-552b907c64d5-72"], ["position", "Midfield"], ["age", 20], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-08 20:25:41.530138"], ["updated_at", "2022-12-08 20:25:41.530138"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047U2L4S3Y-aecb76021369-72"], ["position", "Defender"], ["age", 21], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-08 20:25:41.531389"], ["updated_at", "2022-12-08 20:25:41.531389"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047WBXJUR1-bd685fded07b-72"], ["position", "Attacker"], ["age", 22], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-08 20:25:41.532617"], ["updated_at", "2022-12-08 20:25:41.532617"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U0402A9B1HT-7af168a719fd-72"], ["position", "Midfield"], ["age", 21], ["country", "China"], ["goals", 42], ["created_at", "2022-12-08 20:25:41.533854"], ["updated_at", "2022-12-08 20:25:41.533854"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", "https://ca.slack-edge.com/T02MD9XTF-U047XTNEDT7-f8fff48a5790-72"], ["position", "COMMENTATOR"], ["age", 25], ["country", "Poland"], ["goals", 0], ["created_at", "2022-12-08 20:25:41.535097"], ["updated_at", "2022-12-08 20:25:41.535097"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 1], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/34/64/indian-chief-soccer-mascot-vector-1813464.webp"], ["standing", 1], ["top_scorer", "Mazin 96, Chuck 80, Jason 81"], ["team_captin", "Mazin"], ["created_at", "2022-12-08 20:25:41.543257"], ["updated_at", "2022-12-08 20:25:41.543257"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 2], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team GrandMasterSexy"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/28/51/rooster-soccer-mascot-vector-2352851.webp"], ["standing", 2], ["top_scorer", "Mason 3, Daniel 112, Rachel 64"], ["team_captin", "Daniel"], ["created_at", "2022-12-08 20:25:41.545393"], ["updated_at", "2022-12-08 20:25:41.545393"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 3], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team BMG"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/05/39/cardinal-school-mascot-vector-3360539.webp"], ["standing", 3], ["top_scorer", "Brandon 69, Sonte 31, Yana 17"], ["team_captin", "Brandon"], ["created_at", "2022-12-08 20:25:41.547301"], ["updated_at", "2022-12-08 20:25:41.547301"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 4], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/83/44/tiger-football-soccer-mascot-vector-23648344.webp"], ["standing", 4], ["top_scorer", "Sam 32, Stephen 32, Yesenia 99"], ["team_captin", "All"], ["created_at", "2022-12-08 20:25:41.548797"], ["updated_at", "2022-12-08 20:25:41.548797"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 5], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Dragon"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/86/33/sword-mascot-logo-desain-vector-29178633.webp"], ["standing", 5], ["top_scorer", "Jon 26, Anna 13, Jaycee 64"], ["team_captin", "Jon"], ["created_at", "2022-12-08 20:25:41.550190"], ["updated_at", "2022-12-08 20:25:41.550190"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 6], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Nerds"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/16/80/shark-sport-mascot-vector-701680.webp"], ["standing", 6], ["top_scorer", "Claire 11, Oren 0, Gavin 45"], ["team_captin", "Claire"], ["created_at", "2022-12-08 20:25:41.551560"], ["updated_at", "2022-12-08 20:25:41.551560"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 7], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Germany"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/57/62/tyrannosaur-dinosaur-mascot-isolated-dino-vector-44115762.webp"], ["standing", 7], ["top_scorer", "Paolo 44, Random 1, Random 13"], ["team_captin", "Paolo"], ["created_at", "2022-12-08 20:25:41.552961"], ["updated_at", "2022-12-08 20:25:41.552961"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "teams" WHERE "teams"."standing" = ? LIMIT ?[0m  [["standing", 8], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "top_scorer", "team_captin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team MomsFood"], ["mascot", "https://cdn.vectorstock.com/i/preview-2x/12/21/gorilla-football-soccer-mascot-vector-23791221.webp"], ["standing", 8], ["top_scorer", "Dylan 0, Vera 14, Mike 42"], ["team_captin", "Mike"], ["created_at", "2022-12-08 20:25:41.554598"], ["updated_at", "2022-12-08 20:25:41.554598"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 10], ["draw", 0], ["lost", 0], ["last5", "W,W,W,W,W"], ["points", 30], ["player_id", 1], ["team_id", 1], ["created_at", "2022-12-08 20:25:41.572108"], ["updated_at", "2022-12-08 20:25:41.572108"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team GrandMasterSexy"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 9], ["draw", 0], ["lost", 1], ["last5", "W,W,L,W,W"], ["points", 27], ["player_id", 3], ["team_id", 2], ["created_at", "2022-12-08 20:25:41.574447"], ["updated_at", "2022-12-08 20:25:41.574447"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team BMG"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 9], ["draw", 1], ["lost", 1], ["last5", "W,D,L,W,W"], ["points", 25], ["player_id", 2], ["team_id", 3], ["created_at", "2022-12-08 20:25:41.576509"], ["updated_at", "2022-12-08 20:25:41.576509"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 8], ["draw", 0], ["lost", 2], ["last5", "L,L,W,W,W"], ["points", 23], ["player_id", 7], ["team_id", 4], ["created_at", "2022-12-08 20:25:41.578507"], ["updated_at", "2022-12-08 20:25:41.578507"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Dragon"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 7], ["draw", 1], ["lost", 2], ["last5", "W,W,D,L,L"], ["points", 20], ["player_id", 19], ["team_id", 5], ["created_at", "2022-12-08 20:25:41.580894"], ["updated_at", "2022-12-08 20:25:41.580894"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Nerds"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 6], ["draw", 2], ["lost", 2], ["last5", "W,D,D,L,W"], ["points", 19], ["player_id", 11], ["team_id", 7], ["created_at", "2022-12-08 20:25:41.583173"], ["updated_at", "2022-12-08 20:25:41.583173"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Germany"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 6], ["draw", 2], ["lost", 2], ["last5", "L,L,D,W,W"], ["points", 10], ["player_id", 8], ["team_id", 8], ["created_at", "2022-12-08 20:25:41.585299"], ["updated_at", "2022-12-08 20:25:41.585299"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "logo", "mp", "won", "draw", "lost", "last5", "points", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team MomsFood"], ["logo", "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg"], ["mp", "10"], ["won", 5], ["draw", 3], ["lost", 2], ["last5", "D,D,D,L,L"], ["points", 10], ["player_id", 24], ["team_id", 8], ["created_at", "2022-12-08 20:25:41.587699"], ["updated_at", "2022-12-08 20:25:41.587699"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:26:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.3ms)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 48049)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:26:41 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.71ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 4410)
+
+
+Started GET "/" for ::1 at 2022-12-08 13:26:45 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.3ms | Allocations: 711)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3357)
+
+
+Started GET "/divisions" for ::1 at 2022-12-08 13:26:48 -0700
+  
+SyntaxError (/Users/maz/Desktop/Soccer/backend/app/controllers/divisions_controller.rb:39: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/divisions_controller.rb:39: syntax error, unexpected `end', expecting end-of-input
+app/controllers/divisions_controller.rb:39: syntax error, unexpected `end', expecting end-of-input
+Started GET "/favicon.ico" for ::1 at 2022-12-08 13:26:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/divisions" for ::1 at 2022-12-08 13:27:24 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms | Allocations: 22355)
+
+
+  
+SyntaxError (/Users/maz/Desktop/Soccer/backend/app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+...mp, :won, :draw, :lost, last5:, :points
+...                              ^
+):
+  
+app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+app/controllers/divisions_controller.rb:5:in `index'
+Started GET "/divisions" for ::1 at 2022-12-08 13:27:26 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 938)
+
+
+  
+SyntaxError (/Users/maz/Desktop/Soccer/backend/app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+...mp, :won, :draw, :lost, last5:, :points
+...                              ^
+):
+  
+app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+app/serializers/division_serializer.rb:2: syntax error, unexpected ','
+app/controllers/divisions_controller.rb:5:in `index'
+Started GET "/divisions" for ::1 at 2022-12-08 13:27:47 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.13ms)
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 1.7ms | Allocations: 53665)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:29:58 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.11ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 4458)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 13:30:08 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Mazin", "password"=>"[FILTERED]", "session"=>{"username"=>"Mazin", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazin"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 401 Unauthorized in 13ms (Views: 3.5ms | ActiveRecord: 1.0ms | Allocations: 1748)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 13:30:14 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"M", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"M"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011a9236a8>, params: {"username"=>"M", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"M"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "M"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "M"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 292ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 19147)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 13:30:21 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Mazi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Mazi"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000106827c68>, params: {"username"=>"Mazi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Mazi"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mazi"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-08 20:30:21.887451"], ["updated_at", "2022-12-08 20:30:21.887451"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "Mazi"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.09ms)
+Completed 201 Created in 266ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 3720)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:30:23 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.75ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1933)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:30:26 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.22ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 4392)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:30:27 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.13ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 1.8ms | Allocations: 18414)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:30:28 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.59ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4392)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:30:29 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.7ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.8ms | Allocations: 18411)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:30:30 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.76ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:30:32 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.92ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 4392)
+
+
+Started GET "/divisions" for ::1 at 2022-12-08 13:48:33 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.4ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.73ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 2.9ms | Allocations: 18658)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 13:59:04 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"mazi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"mazi"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010a265b78>, params: {"username"=>"mazi", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"mazi"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mazi"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "mazi"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-08 20:59:04.923595"], ["updated_at", "2022-12-08 20:59:04.923595"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "mazi"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.14ms)
+Completed 201 Created in 279ms (Views: 0.6ms | ActiveRecord: 2.7ms | Allocations: 3593)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:59:07 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.8ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 4434)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:59:09 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1907)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:59:12 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.37ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 2.4ms | Allocations: 18549)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:59:14 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.6ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.32ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 2.1ms | Allocations: 18411)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:59:14 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.92ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.9ms | Allocations: 18415)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:59:15 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.76ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 1.3ms | Allocations: 18412)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 14:00:37 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.54ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 4392)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 14:01:00 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Mazi", "password"=>"[FILTERED]", "session"=>{"username"=>"Mazi", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazi"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.42ms)
+Completed 201 Created in 283ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 906)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 14:01:02 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.15ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 4392)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 14:01:03 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.06ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 1.8ms | Allocations: 18412)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:02:02 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.6ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 14:02:39 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.6ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.04ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 2.0ms | Allocations: 18411)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:02:41 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.83ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 14:02:41 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.31ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 2.0ms | Allocations: 18412)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:02:42 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.55ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 14:02:43 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.97ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 1.8ms | Allocations: 18411)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:02:43 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.73ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 14:02:47 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.6ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.24ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 2.4ms | Allocations: 18411)
+
+

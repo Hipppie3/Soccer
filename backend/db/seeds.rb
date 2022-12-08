@@ -39,11 +39,11 @@ t8 = Team.create(name: "Team MomsFood", mascot: "https://cdn.vectorstock.com/i/p
 
 puts "Creating division..."
 
-Division.create(name: "Team Sexy", logo: "https://cdn.vectorstock.com/i/preview-2x/34/64/indian-chief-soccer-mascot-vector-1813464.webp", won: 10, draw: 0, lost:0, points: 30, player_id: p1.id, team_id: t1.id)
-Division.create(name: "Team GrandMasterSexy",  logo: "https://cdn.vectorstock.com/i/preview-2x/28/51/rooster-soccer-mascot-vector-2352851.webp", won: 9, draw: 0, lost: 1, points: 27, player_id: p3.id, team_id: t2.id)
-Division.create(name: "Team BMG",  logo: "https://cdn.vectorstock.com/i/preview-2x/05/39/cardinal-school-mascot-vector-3360539.webp", won: 9, draw: 1, lost: 1, points: 25, player_id: p2.id, team_id: t3.id)
-Division.create(name: "Team Flatiron",  logo: "https://cdn.vectorstock.com/i/preview-2x/83/44/tiger-football-soccer-mascot-vector-23648344.webp", won: 8, draw: 0, lost: 2, points: 23, player_id: p7.id, team_id: t4.id)
-Division.create(name: "Team Dragon",  logo: "https://cdn.vectorstock.com/i/preview-2x/86/33/sword-mascot-logo-desain-vector-29178633.webp", won: 7, draw: 1, lost: 2, points: 20, player_id: p19.id, team_id: t5.id)
-Division.create(name: "Team Nerds",  logo: "https://cdn.vectorstock.com/i/preview-2x/16/80/shark-sport-mascot-vector-701680.webp", won: 6, draw: 2, lost: 2, points: 19, player_id: p11.id, team_id: t7.id)
-Division.create(name: "Team Germany",  logo: "https://cdn.vectorstock.com/i/preview-2x/57/62/tyrannosaur-dinosaur-mascot-isolated-dino-vector-44115762.webp", won: 6, draw: 2, lost: 2, points: 10, player_id: p8.id, team_id: t8.id)
-Division.create(name: "Team MomsFood",  logo: "https://cdn.vectorstock.com/i/preview-2x/12/21/gorilla-football-soccer-mascot-vector-23791221.webp", won: 5, draw: 3, lost: 2, points: 10, player_id: p24.id, team_id: t8.id)
+Division.create(name: "Team Sexy", logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 10, draw: 0, lost:0, last5: "W,W,W,W,W", points: 30, player_id: p1.id, team_id: t1.id)
+Division.create(name: "Team GrandMasterSexy",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 9, draw: 0, lost: 1, last5: "W,W,L,W,W", points: 27, player_id: p3.id, team_id: t2.id)
+Division.create(name: "Team BMG",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 9, draw: 1, lost: 1, last5: "W,D,L,W,W", points: 25, player_id: p2.id, team_id: t3.id)
+Division.create(name: "Team Flatiron",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 8, draw: 0, lost: 2, last5: "L,L,W,W,W", points: 23, player_id: p7.id, team_id: t4.id)
+Division.create(name: "Team Dragon",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 7, draw: 1, lost: 2, last5: "W,W,D,L,L", points: 20, player_id: p19.id, team_id: t5.id)
+Division.create(name: "Team Nerds",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "W,D,D,L,W", points: 19, player_id: p11.id, team_id: t7.id)
+Division.create(name: "Team Germany",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "L,L,D,W,W", points: 10, player_id: p8.id, team_id: t8.id)
+Division.create(name: "Team MomsFood",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 5, draw: 3, lost: 2, last5: "D,D,D,L,L", points: 10, player_id: p24.id, team_id: t8.id)
