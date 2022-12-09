@@ -25,6 +25,21 @@ p22 = Player.create(name: "Anna", position: "Defender", image: "https://ca.slack
 p23 = Player.create(name: "Sonte", position: "Attacker", image: "https://ca.slack-edge.com/T02MD9XTF-U047WBXJUR1-bd685fded07b-72", goals: 31, age: 22, country: "Japan")
 p24 = Player.create(name: "Mike", position: "Midfield", image: "https://ca.slack-edge.com/T02MD9XTF-U0402A9B1HT-7af168a719fd-72", goals: 42, age: 21, country: "China")
 p25 = Player.create(name: "Ray", position: "COMMENTATOR", image: "https://ca.slack-edge.com/T02MD9XTF-U047XTNEDT7-f8fff48a5790-72", goals: 0, age: 25, country: "Poland")
+p26 = Player.create(name: "David", position: "Attacker", image: "", goals: 16, age: 19, country: "Canada")
+p27 = Player.create(name: "Allan", position: "Midfield", image: "", goals: 21, age: 23, country: "Costa Rica")
+p28 = Player.create(name: "Dom", position: "GoalKeeper", image: "", goals: 16, age: 19, country: "Cameroon")
+p29 = Player.create(name: "Jhonny", position: "Midfield", image: "", goals: 37, age: 25, country: "Croatia")
+p30 = Player.create(name: "Kali", position: "Defender", image: "", goals: 11, age: 21, country: "South Africa")
+p31 = Player.create(name: "Ximena", position: "Attacker", image: "", goals: 21, age: 18, country: "Lebanon")
+p32 = Player.create(name: "Louis", position: "Medical", image: "https://i.pinimg.com/474x/db/91/94/db9194704beb1417212fa2f23b3c65bb.jpg", goals: 0, age: 21, country: "Ecuador")
+p33 = Player.create(name: "Amigo", position: "Massage THERAPIST", image: "https://i.pinimg.com/474x/40/55/0b/40550b9435297d71658eeea5e68eb03a.jpg", goals: 11, age: 21, country: "South Africa")
+p35 = Player.create(name: "Salem", position: "CEO", image: "https://i.pinimg.com/474x/fa/32/f9/fa32f9e04f7b80ee1a3cd033f2f86d2c.jpg", goals: 0, age: 21, country: "Ghana")
+p36 = Player.create(name: "Kaya", position: "Emotinal Damage", image: "https://is5-ssl.mzstatic.com/image/thumb/Purple116/v4/b6/0c/fe/b60cfe75-926d-0e8c-fd3f-b0177c7c1fa6/source/512x512bb.jpg", goals: 0, age: 21, country: "Mazin Heart")
+
+
+
+
+
 
 puts "Creating teams..."
 
@@ -39,6 +54,7 @@ t8 = Team.create(name: "Team MomsFood", mascot: "https://cdn.vectorstock.com/i/p
 
 puts "Creating division..."
 
+Division.create(name: "Division A", logo: "https://cdn.vectorstock.com/i/preview-2x/34/64/indian-chief-soccer-mascot-vector-1813464.webp",mp: 0, won: 0, draw: 0, lost:0, points: 30, last5: "" player_id: p1.id, team_id: t1.id)
 Division.create(name: "Team Sexy", logo: "https://cdn.vectorstock.com/i/preview-2x/34/64/indian-chief-soccer-mascot-vector-1813464.webp", won: 10, draw: 0, lost:0, points: 30, player_id: p1.id, team_id: t1.id)
 Division.create(name: "Team GrandMasterSexy",  logo: "https://cdn.vectorstock.com/i/preview-2x/28/51/rooster-soccer-mascot-vector-2352851.webp", won: 9, draw: 0, lost: 1, points: 27, player_id: p3.id, team_id: t2.id)
 Division.create(name: "Team BMG",  logo: "https://cdn.vectorstock.com/i/preview-2x/05/39/cardinal-school-mascot-vector-3360539.webp", won: 9, draw: 1, lost: 1, points: 25, player_id: p2.id, team_id: t3.id)
