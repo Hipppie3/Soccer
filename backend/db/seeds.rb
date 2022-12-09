@@ -39,11 +39,15 @@ t8 = Team.create(name: "Team MomsFood", mascot: "https://cdn.vectorstock.com/i/p
 
 puts "Creating division..."
 
-Division.create(name: "Team Sexy", logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 10, draw: 0, lost:0, last5: "W,W,W,W,W", points: 30, player_id: p1.id, team_id: t1.id)
-Division.create(name: "Team GrandMasterSexy",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 9, draw: 0, lost: 1, last5: "W,W,L,W,W", points: 27, player_id: p3.id, team_id: t2.id)
-Division.create(name: "Team BMG",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 9, draw: 1, lost: 1, last5: "W,D,L,W,W", points: 25, player_id: p2.id, team_id: t3.id)
-Division.create(name: "Team Flatiron",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 8, draw: 0, lost: 2, last5: "L,L,W,W,W", points: 23, player_id: p7.id, team_id: t4.id)
-Division.create(name: "Team Dragon",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 7, draw: 1, lost: 2, last5: "W,W,D,L,L", points: 20, player_id: p19.id, team_id: t5.id)
-Division.create(name: "Team Nerds",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "W,D,D,L,W", points: 19, player_id: p11.id, team_id: t7.id)
-Division.create(name: "Team Germany",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "L,L,D,W,W", points: 10, player_id: p8.id, team_id: t8.id)
-Division.create(name: "Team MomsFood",  logo: "https://as2.ftcdn.net/v2/jpg/01/51/40/71/1000_F_151407161_7v6lccxh9kGK4ftJksDcFv22K8oPPoVN.jpg",mp: 10, won: 5, draw: 3, lost: 2, last5: "D,D,D,L,L", points: 10, player_id: p24.id, team_id: t8.id)
+Division.create(name: "Division A", logo: "https://upload.wikimedia.org/wikipedia/en/c/c6/USL_First_Division_logo.svg",mp: 0, won: 0, draw: 0, lost:0, last5: "", points: 0, player_id: p1.id, team_id: t1.id)
+Division.create(name: "Team Sexy", logo: "https://i.pinimg.com/474x/79/41/d4/7941d4654655b74291bace68f8bf8bc3.jpg",mp: 10, won: 10, draw: 0, lost:0, last5: "W,W,W,W,W", points: 30, player_id: p1.id, team_id: t1.id)
+Division.create(name: "Team GrandMasterSexy",  logo: "https://i.pinimg.com/564x/6d/27/f8/6d27f81fc49c0ea491a27ce91842334f.jpg",mp: 10, won: 9, draw: 0, lost: 1, last5: "W,W,L,W,W", points: 27, player_id: p3.id, team_id: t2.id)
+Division.create(name: "Team BMG",  logo: "https://i.pinimg.com/474x/7f/f7/2f/7ff72fc908e3151e4462417e7e01db74.jpg",mp: 10, won: 9, draw: 1, lost: 1, last5: "W,D,L,W,W", points: 25, player_id: p2.id, team_id: t3.id)
+Division.create(name: "Division B", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHIykdKj5AmqxJnt145v2L_Lnr0N-sPApXD41EMOn2-hr3j90M5mX0GSrDp47G3GPAog&usqp=CAU",mp: 0, won: 0, draw: 0, lost:0, last5: "", points: 0, player_id: p1.id, team_id: t1.id)
+Division.create(name: "Team Flatiron",  logo: "https://i.pinimg.com/474x/9f/87/2e/9f872e837443bba0466536d52b82bf8d.jpg",mp: 10, won: 8, draw: 0, lost: 2, last5: "L,L,W,W,W", points: 23, player_id: p7.id, team_id: t4.id)
+Division.create(name: "Team Dragon",  logo: "https://i.pinimg.com/474x/58/8c/a1/588ca12108670f4b60e244d6c0702538.jpg",mp: 10, won: 7, draw: 1, lost: 2, last5: "W,W,D,L,L", points: 20, player_id: p19.id, team_id: t5.id)
+Division.create(name: "Team Nerds",  logo: "https://i.pinimg.com/474x/a0/86/96/a086966fbe6b0a6d1008757321615047.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "W,D,D,L,W", points: 19, player_id: p11.id, team_id: t7.id)
+Division.create(name: "Division C", logo: "https://upload.wikimedia.org/wikipedia/en/0/0f/USL_Second_Division.png",mp: 0, won: 0, draw: 0, lost:0, last5: "", points: 0, player_id: p1.id, team_id: t1.id)
+Division.create(name: "Team Germany",  logo: "https://i.pinimg.com/474x/c0/a4/a2/c0a4a27210a6e664a70f95d6bdadbc97.jpg",mp: 10, won: 6, draw: 2, lost: 2, last5: "L,L,D,W,W", points: 10, player_id: p8.id, team_id: t8.id)
+Division.create(name: "Team MomsFood",  logo: "https://i.pinimg.com/474x/85/c0/7d/85c07d5869c018eab7582728d8fa1fc1.jpg",mp: 10, won: 5, draw: 3, lost: 2, last5: "D,D,D,L,L", points: 10, player_id: p24.id, team_id: t8.id)
+Division.create(name: "Team DogWater",  logo: "https://i.pinimg.com/474x/6c/b9/6a/6cb96afce685c697c65c15e30845d4cf.jpg",mp: 10, won: 5, draw: 3, lost: 2, last5: "D,D,D,L,L", points: 10, player_id: p24.id, team_id: t8.id)
