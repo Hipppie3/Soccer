@@ -17711,3 +17711,1084 @@ Processing by TeamsController#index as */*
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1870)
 
 
+Started GET "/players" for 127.0.0.1 at 2022-12-08 12:43:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 48049)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 12:43:50 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.69ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 4410)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:11 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 401 Unauthorized in 16ms (Views: 2.2ms | ActiveRecord: 1.3ms | Allocations: 2432)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:13 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"", "password"=>"[FILTERED]", "session"=>{"username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 401 Unauthorized in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 599)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:22 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 401 Unauthorized in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 599)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:24 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 401 Unauthorized in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 581)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:24 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 401 Unauthorized in 5ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 583)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 12:44:25 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 401 Unauthorized in 8ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 583)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 12:44:42 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Brandon "}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000015640a540>, params: {"username"=>"Brandon ", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Brandon "}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Brandon "], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-08 19:44:43.060568"], ["updated_at", "2022-12-08 19:44:43.060568"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "Brandon "], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.08ms)
+Completed 201 Created in 280ms (Views: 1.6ms | ActiveRecord: 3.0ms | Allocations: 17732)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 12:44:47 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.79ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 4394)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 12:44:50 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.26ms)
+Completed 200 OK in 38ms (Views: 24.0ms | ActiveRecord: 2.4ms | Allocations: 61611)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 12:44:52 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1932)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 12:44:57 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.34ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 4392)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-12-08 12:45:09 -0700
+Processing by SessionsController#destroy as */*
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 13:22:02 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Alex", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Alex"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000013485ac70>, params: {"username"=>"Alex", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Alex"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Alex"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Alex"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-08 20:22:03.251152"], ["updated_at", "2022-12-08 20:22:03.251152"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "Alex"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.29ms)
+Completed 201 Created in 261ms (Views: 0.7ms | ActiveRecord: 3.6ms | Allocations: 3587)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 13:22:08 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.44ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 4434)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 13:22:09 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.64ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.9ms | Allocations: 18251)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:22:10 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1907)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:31:42 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 6581)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 13:54:24 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.25ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 2023)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:30:16 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.86ms)
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 1.4ms | Allocations: 2024)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:40:49 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.56ms)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.9ms | Allocations: 2024)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:44:54 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1870)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 14:56:35 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.09ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 2.8ms | Allocations: 2023)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 17:33:49 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 2.6ms | Allocations: 2023)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:13:35 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.14ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 2.1ms | Allocations: 2023)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:18:16 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.73ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:22:53 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.36ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 1871)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:24:13 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.44ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 18:27:44 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.4ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.48ms)
+Completed 200 OK in 45ms (Views: 35.1ms | ActiveRecord: 1.4ms | Allocations: 28383)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 18:27:48 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (1.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.13ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 2.6ms | Allocations: 18124)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 18:28:07 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (6.51ms)
+Completed 201 Created in 269ms (Views: 7.0ms | ActiveRecord: 0.6ms | Allocations: 2665)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:28:48 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (1.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.39ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 1.8ms | Allocations: 4458)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 18:29:04 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.44ms)
+Completed 201 Created in 258ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 863)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:29:07 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.86ms)
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 4392)
+
+
+Started GET "/divisions" for 127.0.0.1 at 2022-12-08 18:29:09 -0700
+Processing by DivisionsController#index as */*
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.87ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 2.0ms | Allocations: 18123)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:29:11 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.51ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:32:25 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.76ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-12-08 18:32:48 -0700
+Processing by TeamsController#index as */*
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.83ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 1870)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-12-08 18:33:09 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"Brandon ", "password"=>"[FILTERED]", "session"=>{"username"=>"Brandon ", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Brandon "], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.38ms)
+Completed 201 Created in 260ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 864)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:33:11 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.17ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:34:41 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.71ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:35:53 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.28ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.2ms | Allocations: 4393)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:36:34 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.58ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:36:41 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.87ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:36:44 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.11ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:36:47 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.23ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:36:55 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.74ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 4392)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:37:03 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.26ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 4392)
+
+
+Started POST "/players" for 127.0.0.1 at 2022-12-08 18:37:27 -0700
+Processing by PlayersController#create as */*
+  Parameters: {"name"=>"Vera", "image"=>"", "position"=>"", "age"=>"", "country"=>"", "goals"=>"", "player"=>{"name"=>"Vera", "image"=>"", "position"=>"", "age"=>"", "country"=>"", "goals"=>""}}
+[31mUnpermitted parameter: :player. Context: { controller: PlayersController, action: create, request: #<ActionDispatch::Request:0x000000013493c530>, params: {"name"=>"Vera", "image"=>"", "position"=>"", "age"=>"", "country"=>"", "goals"=>"", "controller"=>"players", "action"=>"create", "player"=>{"name"=>"Vera", "image"=>"", "position"=>"", "age"=>"", "country"=>"", "goals"=>""}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mPlayer Create (2.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", ""], ["position", ""], ["age", nil], ["country", ""], ["goals", nil], ["created_at", "2022-12-09 01:37:27.277764"], ["updated_at", "2022-12-09 01:37:27.277764"]]
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 201 Created in 12ms (Views: 1.2ms | ActiveRecord: 3.3ms | Allocations: 2245)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:38:36 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.88ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:38:42 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.41ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:38:49 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.78ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:39:10 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.51ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 18:39:59 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 202 Accepted in 12ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1053)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:40:02 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.54ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 4539)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 18:40:11 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 202 Accepted in 4ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 919)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:42:06 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.28ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 4539)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 18:42:14 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.65ms)
+Completed 202 Accepted in 5ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 919)
+
+
+Started PATCH "/players/25" for 127.0.0.1 at 2022-12-08 18:42:26 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"COMMENTATOR", "id"=>"25", "player"=>{"position"=>"COMMENTATOR"}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 202 Accepted in 6ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 920)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:42:28 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.69ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 4539)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:44:25 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.88ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:44:53 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.49ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:44:57 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.55ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:45:08 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.8ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 4537)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 18:45:17 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 202 Accepted in 7ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 919)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 18:45:43 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.51ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 4539)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:06:38 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.34ms)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 2.7ms | Allocations: 4695)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:12:26 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.67ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.6ms | Allocations: 4694)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:18:00 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.04ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 1.0ms | Allocations: 4695)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:24:27 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (1.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.86ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 2.0ms | Allocations: 4694)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 19:25:53 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 202 Accepted in 8ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 958)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:26:02 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.76ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 4539)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:26:38 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.25ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 4537)
+
+
+Started PATCH "/players/25" for 127.0.0.1 at 2022-12-08 19:26:53 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"COMMENTATOR", "id"=>"25", "player"=>{"position"=>"COMMENTATOR"}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 202 Accepted in 7ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 918)
+
+
+Started PATCH "/players/25" for 127.0.0.1 at 2022-12-08 19:26:54 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"COMMENTATOR", "id"=>"25", "player"=>{"position"=>"COMMENTATOR"}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 202 Accepted in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 920)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:05 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.05ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 4539)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:10 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.66ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:16 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.53ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:20 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.78ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:22 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.19ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:36 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.03ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:39 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:27:40 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.04ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 4537)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 19:27:53 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Mazii", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Mazii"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000113bbd258>, params: {"username"=>"Mazii", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Mazii"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazii"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazii"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 265ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 5703)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-12-08 19:28:03 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Mazii", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"Mazii"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000137ecb368>, params: {"username"=>"Mazii", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"username"=>"Mazii"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Mazii"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mazii"], ["password_digest", "[FILTERED]"], ["created_at", "2022-12-09 02:28:03.367068"], ["updated_at", "2022-12-09 02:28:03.367068"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "Mazii"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.08ms)
+Completed 201 Created in 261ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 3478)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:05 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.67ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:26 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.86ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:29 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.79ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 4538)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:38 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.81ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:40 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.09ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:28:50 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.08ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started GET "/players" for ::1 at 2022-12-08 19:29:43 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.84ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 4534)
+
+
+Started GET "/players/1" for ::1 at 2022-12-08 19:29:46 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.79ms)
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 786)
+
+
+Started GET "/players/26" for ::1 at 2022-12-08 19:29:55 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 688)
+
+
+Started GET "/players/28" for ::1 at 2022-12-08 19:30:12 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 404 Not Found in 5ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 584)
+
+
+Started GET "/players/26" for ::1 at 2022-12-08 19:30:19 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 689)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:36:35 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.36ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 1.7ms | Allocations: 4695)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:36:37 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.84ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:36:41 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.83ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:38:17 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.92ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:38:19 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 19:38:26 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 202 Accepted in 4ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 958)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:38:28 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.79ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 4539)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:39:03 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 4537)
+
+
+Started GET "/players" for 127.0.0.1 at 2022-12-08 19:39:12 -0700
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.78ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 4537)
+
+
+Started PATCH "/players/26" for 127.0.0.1 at 2022-12-08 19:39:16 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"position"=>"", "id"=>"26", "player"=>{"position"=>""}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 202 Accepted in 6ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 917)
+
+

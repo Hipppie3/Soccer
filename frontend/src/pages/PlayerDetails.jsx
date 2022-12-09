@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 // import {useParams} from "react-router-dom";
 
-function PlayerDetails({p, onDeletePlayer}) {
+function PlayerDetails({ p, onDeletePlayer, handlePosition }) {
     const {name, goals, image, position, age, country} = p;
+    const [positions, setPositions] = useState("")
 
 function handleDeleteClick() {
   fetch(`/api/players/${p.id}`, {
@@ -14,11 +15,26 @@ function handleDeleteClick() {
   });
 }
 
+const handleUpdatePosition = () => {
+  fetch(`/api/players/${p.id}`, {
+      method: "PATCH",
+      headers: {
+          "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+      position: position
+  })
+})
+  .then((r) => r.json())
+  .then((newPosition) => {
+      handlePosition(newPosition)
+  })
+  setPositions("");
+}
+
   return ( 
-    <container className="playerCard">
       <div>
         <img src={image} alt="playerImage" />
-      </div>
       <div className="playerContainer">
         <button className="deleteBtn" onClick={handleDeleteClick}>
           Trash this Player!
@@ -28,7 +44,15 @@ function handleDeleteClick() {
           Position: {position}, Age: {age}, Country: {country}, Goals: {goals}
         </p>
       </div>
-    </container>
+      <div>
+      <input 
+      type="text" 
+      onChange = {(e)=>{setPositions(e.target.value)}}
+      value={positions} 
+      />
+        <button onClick={handleUpdatePosition}>Update Position</button>
+      </div>
+      </div>
     )}
 
     export default PlayerDetails;

@@ -12,7 +12,7 @@ class PlayersController < ApplicationController
 
     def update
         player = Player.find_by!(id: params[:id])
-        player.update!(players_params)
+        player.update!(player_position)
         render json: player, status: :accepted
     end
 
@@ -31,6 +31,10 @@ class PlayersController < ApplicationController
 
     def players_params
         params.permit(:name, :image, :position, :age, :country, :goals)
+    end
+
+    def player_position
+        params.require(:player).permit(:position)
     end
 
 end

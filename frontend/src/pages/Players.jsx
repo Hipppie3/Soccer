@@ -25,28 +25,23 @@ const Player = () => {
       setPlayer(removePlayer)
     }
 
-      
-   
-    // const PlayerCards = () => {
-    //     return ((player.length > 0) ? player.map((i) => (<PlayerCard key={i.id} players={i}/>)) : <div></div>)
-    // }  
-
-
+    function handlePosition(updatedPosition) {
+      setPlayer((player) =>
+          player.map((playerPos) => {
+          return playerPos.id === updatedPosition.id ? updatedPosition : playerPos;
+      })
+      );
+  }
     return ( 
       <div>
         <PlayerCard 
-        player={player} s
+        handleDeletePlayers={handleDeletePlayers}
+        player={player} 
         setPlayer={setPlayer}
-        onDeletePlayer={handleDeletePlayers}
+        handlePosition= {handlePosition}
         />
-      </div>)
-    // <>
-    //     <NavBar/>
-    //     <div class="grid grid-flow-row grid-cols-4 gap-x-4 gap-y-4 bg-indigo-50">
-    //         {PlayerCards()}
-            
-    //     </div>
-    // </>)
+      </div>
+    )
 }
 
 export default Player;
