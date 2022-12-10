@@ -14,9 +14,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_190102) do
   create_table "divisions", force: :cascade do |t|
     t.string "name"
     t.string "logo"
+    t.string "mp"
     t.integer "won"
     t.integer "draw"
     t.integer "lost"
+    t.string "last5"
     t.integer "points"
     t.integer "player_id", null: false
     t.integer "team_id", null: false

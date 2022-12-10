@@ -1,0 +1,270 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #070500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 5px solid rgb(45, 40, 45);
+  background-color: rgb(12, 11, 12);
+  
+}
+
+.click{
+  background-color: #fc6bf8;
+  border: none;
+  font-weight: bold;
+  color: rgb(78, 248, 101);
+  font-size: 17px;
+}
+header a {
+  font-size: 17px;
+  display: inline-block;
+  background-color: #fc6bf8;
+  border: 5px solid rgb(227, 243, 53);
+  margin: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: rgb(78, 248, 101);
+  font-weight: bold;
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  border-radius: 1em;
+}
+
+/* main {
+  margin: 1rem;
+} */
+
+form {
+  background-color: #ffc83e;
+  border: 10px solid rgb(18, 243, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  padding: 0 1rem 1rem;
+}
+
+form input {
+  height: 50px;
+  margin: 0.25rem 0;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(107, 57, 245);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.signup, .login{
+  display: flex;
+  justify-content: center;
+  color: rgb(107, 57, 245);
+}
+
+
+
+::placeholder {
+  color: rgb(107, 57, 245);
+  font-weight: bold
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: yellow;
+  background-color: black;
+}
+
+.signUpE li {
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin: 1em
+}
+
+.loginE {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+  .homePage{
+    width: 100%;
+    height: 100%;
+  }
+  .homie{
+    text-align: center;
+    padding-top: 1em;
+    font-size: 50px;
+    color: yellow;
+    font-weight: bold;
+    background-image: url('/soccer.jpeg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pink{
+    background-image: url('/team.jpeg');
+  }
+
+  .create{
+    display: flex;
+    justify-content: center;
+    color: hotpink;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  img {
+     border-radius: 5px 5px 0 0;
+     width: 310px;
+     border-bottom: 2px solid white;
+  }
+  .card {
+  
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: hotpink;
+  width: 310px;
+  height: 485px;
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+  margin-top: 2em;
+  border: 2px solid white;
+  
+}
+
+.allCards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+
+
+h3 {
+  color: white;
+}
+
+.title{
+  font-size: 30px;
+  display: flex;
+  margin-left: 1.2em;
+  flex-wrap: wrap;
+  color:black;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titles {
+  font-size: 30px;
+  display: flex;
+  margin-left: 1.2em;
+  flex-wrap: wrap;
+  color: black;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ttitle{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.teamImage{
+  width: 310px;
+  height: 300px;
+}
+
+.playerSearch, .teamSearch{
+  display: flex;
+  justify-content: center;
+}
+
+.labelName{
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.playerStats li{
+  color: black;
+  list-style: none;
+}
+
+.divisionsCard {
+  display: flex;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+.deleteBtn{
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.update{
+  border-radius: .3em;
+  margin-left: .4em;
+}
+
+.what{
+  margin-left: 10.3em;
+  margin-top: 6.4em;
+}
+
+.website {
+  display: flex;
+  align-items: center;
+}
+
